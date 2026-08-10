@@ -28,7 +28,13 @@ interface ram_if#(type T = logic,int size=8);
   T [size-1:0] prem;
   T [size-1:0] packet;
   T[size-1:0] d;
-  
+
+function void display();
+
+  $display("this is interface class");
+
+endfunction
+ 
   function void display(logic[3:0]a,logic[2:0]b,logic[4:0]c,logic[7:0]d);
     d=a+b+c;
     $display("d=%d",d);
@@ -95,11 +101,3 @@ module top;
     drv.start();
    end
 endmodule
- 
-
-//=================================================================
-//       after full                                                
-//=================================================================
-//=================================================================
-//         after pull new version                                  
-//=================================================================
