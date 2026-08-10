@@ -289,8 +289,7 @@ class D extends C;
   endfunction
     
  endclass
-
-
+//----
 module test;
       A a;
       B b,b1;
@@ -522,28 +521,28 @@ endclass
         end
   endmodule
       
-     b=new();
-      a=new();
-     b1=new();
-     a=new();
-      c=new();
-      a=b;
-      $cast(c,a);
-      c.randomize();
+     // b=new();
+     //  a=new();
+     // b1=new();
+     // a=new();
+     //  c=new();
+     //  a=b;
+     //  $cast(c,a);
+     //  c.randomize();
         
     
-      $cast(a,c1);
+     //  $cast(a,c1);
      
-      if($cast(a,c1))
-       a.randomize();
-      else
-        $display("failed");
-      $cast(c,a);
-     c.randomize();
-      b.post_randomize();
-      c.post_randomize();
-      b.randomize();
-      c.post_randomize();
+     //  if($cast(a,c1))
+     //   a.randomize();
+     //  else
+     //    $display("failed");
+     //  $cast(c,a);
+     // c.randomize();
+     //  b.post_randomize();
+     //  c.post_randomize();
+     //  b.randomize();
+     //  c.post_randomize();
   
 
 //================================================
