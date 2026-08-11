@@ -1,7 +1,7 @@
 // Code your testbench here
 // or browse Examples
 //====================(local)================================
-class A1;
+class A;
   rand  local int unsigned a;
   rand local  int unsigned b;
   
@@ -567,5 +567,5 @@ p.randomize();
 $display("randomization completed");
 end
 endmodule
-endmodule
+//endmodule
 //==================================================
