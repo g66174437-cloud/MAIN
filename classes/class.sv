@@ -1,7 +1,11 @@
 // Code your testbench here
 // or browse Examples
 //====================(local)================================
-class a;
+<<<<<<< HEAD
+class A;
+=======
+class A;
+>>>>>>> sv1.0
   rand  local int unsigned a;
   rand local  int unsigned b;
   
@@ -567,4 +571,8 @@ p.randomize();
 $display("randomization completed");
 end
 endmodule
+<<<<<<< HEAD
+=======
+//endmodule
+>>>>>>> sv1.0
 //==================================================
