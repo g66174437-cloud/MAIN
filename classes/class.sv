@@ -549,3 +549,23 @@ endclass
 //           after pull my data                   
 //=================================================
 // This is my class data types tasks all are in one file that is class.sv file this one is that.
+class pull;
+rand int a;
+rand int b;
+
+function void post_randomize();
+$display("a=%d,b=%d",a,b);
+endfunction
+
+endclass
+
+module test;
+pull p;
+initial begin
+p=new();
+p.randomize();
+$display("randomization completed");
+end
+endmodule
+endmodule
+//==================================================
