@@ -567,5 +567,4 @@ p.randomize();
 $display("randomization completed");
 end
 endmodule
-endmodule
 //==================================================
