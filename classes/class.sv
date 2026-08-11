@@ -1,7 +1,7 @@
 // Code your testbench here
 // or browse Examples
 //====================(local)================================
-class A;
+class A1;
   rand  local int unsigned a;
   rand local  int unsigned b;
   
